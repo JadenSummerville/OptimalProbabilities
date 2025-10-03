@@ -84,10 +84,8 @@ Each player choice imposes a constraint on `v`:
 - For a given choice, the expected payoff is calculated using the AI probabilities.  
 - Geometrically, each choice defines a **hyperplane** in the space of AI probabilities, where each point on the hyperplane represents the expected payoff for that choice at those probabilities.  
 - Since the solver **minimizes `v`**, `v` cannot be lower than the expected payoff for the **best player choice** at the given probabilities.  
-- There are no constraints forcing `v` above a hyperplane, because the player will always select the choice with the highest expected payoff.  
+- There are no constraints forcing `v` above these hyperplane (choices) and we minimize `v` so it cannot be greater than the expected payoff for the **best player choice**.  
 - As a result, `v` at any AI probability distribution is always **equal to the expected payoff of the player’s optimal choice**, and the solver adjusts probabilities to minimize this value.
-
-This captures the essence of why the AI randomizes its choices: by adjusting probabilities, it ensures that the player’s maximum expected gain is as low as possible.
 
 ---
 
