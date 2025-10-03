@@ -53,7 +53,7 @@ For example, a 2x3 game:
 
 | Player \ AI | AI Choice 0 | AI Choice 1 | AI Choice 2 |
 |------------|------------|------------|------------|
-| Player Choice 0 | 1 | 0 | -1 |
+| Player Choice 0 | 2 | 0 | -1 |
 | Player Choice 1 | -1 | 0 | 1 |
 
 This matrix shows all possible outcomes for each combination of choices.
